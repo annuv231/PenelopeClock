@@ -1,0 +1,22 @@
+
+.clock{
+   color:#cc33ff ;
+   margin: 100px;
+   text-align: center;
+   font-family:cursive;
+   font-size: 50px;
+}
+.header{
+    color:hotpink;
+    font-family:monospace;
+    margin: 10px;
+    font-size:20px;
+}
+.header{
+    display: inline-block;
+    margin: 0px;
+}
+#bton{
+    font-family: monospace;
+    font-size: 3px;
+}
