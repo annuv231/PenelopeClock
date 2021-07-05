@@ -4,6 +4,11 @@ setInterval(() => {
 hour=x.getHours();
  min=x.getMinutes();
 sec=x.getSeconds();
+var toggle=0;
+if(hour>12>{
+  hour=hour-12;
+  toggle=1;
+}
 if(sec<10){
     sec="0"+sec;
 }
@@ -14,7 +19,11 @@ if(hour<10){
 if(min<10){
     min="0"+min;
 }
-document.getElementById("gettime").innerHTML=hour+":"+min+":"+sec;
+ if(toggle){
+document.getElementById("gettime").innerHTML=hour+":"+min+":"+sec+" PM";}
+     else {
+          document.getElementById("gettime").innerHTML=hour+":"+min+":"+sec+" AM";
+     }
 }, 1000);
 function toggleFullScreen() {
     if ((document.fullScreenElement && document.fullScreenElement !== null) ||    
