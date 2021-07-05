@@ -7,6 +7,7 @@ sec=x.getSeconds();
 if(sec<10){
     sec="0"+sec;
 }
+console.log(typeof hour);
 if(hour<10){
     hour="0"+hour;
 }
