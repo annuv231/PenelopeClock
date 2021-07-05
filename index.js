@@ -45,3 +45,30 @@ function toggleFullScreen() {
       }  
     }  
   }
+  var x,hour,min,sec
+  setInterval(() => {
+       x= new Date();
+  hour=x.getHours();
+   min=x.getMinutes();
+  sec=x.getSeconds();
+  var toggle=0;
+  if(hour>12){
+    hour=hour-12;
+    toggle=1;
+  }
+  if(sec<10){
+      sec="0"+sec;
+  }
+  console.log(typeof hour);
+  if(hour<10){
+      hour="0"+hour;
+  }
+  if(min<10){
+      min="0"+min;
+  }
+   if(toggle){
+  document.getElementById("title").innerHTML=hour+":"+min+":"+sec+" PM"+" Penelope clock";}
+       else {
+            document.getElementById("title").innerHTML=hour+":"+min+":"+sec+" AM"+" Penelope clock";
+       }
+  }, 1000);
