@@ -67,8 +67,8 @@ function toggleFullScreen() {
       min="0"+min;
   }
    if(toggle){
-  document.getElementById("title").innerHTML=hour+":"+min+":"+sec+" PM"+" Penelope clock";}
+  document.getElementById("title").innerHTML=hour+":"+min+":"+sec+" PM";}
        else {
-            document.getElementById("title").innerHTML=hour+":"+min+":"+sec+" AM"+" Penelope clock";
+            document.getElementById("title").innerHTML=hour+":"+min+":"+sec+" AM";
        }
   }, 1000);
