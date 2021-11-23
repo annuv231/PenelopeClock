@@ -1,0 +1,24 @@
+#main .clock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-family: 'Courier New', Courier, monospace;
+}
+#main .clock .timetext {
+  display: none;
+}
+#main .clock .gettime {
+  font-size: 3rem;
+}
+#main .clock .date {
+  max-width: 100%;
+  font-size: 2rem;
+  margin-left: 0rem;
+  margin-top: 3rem;
+  color: white;
+}
+#main .clock .day {
+  font-size: 2rem;
+}
