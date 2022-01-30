@@ -1,26 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400&display=swap');
 * {
+  box-sizing: border-box;
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
 }
 
 body {
-  background-image: linear-gradient(
-    to right top,
-    #f2048b,
-    #db0c9c,
-    #bf20aa,
-    #9d2fb5,
-    #733abd,
-    #5b38b8,
-    #3e36b3,
-    #0934ad,
-    #0c289f,
-    #0d1c90,
-    #0c0f82,
-    #0a0074
-  );
-  background-attachment: fixed;
+  font-family: 'Dongle', sans-serif;
+  font-size: 40px;
+  background-color: #661aff;
 }
 #main .clock {
   display: flex;
@@ -43,4 +32,44 @@ body {
   font-size: 2rem;
   margin-left: 2rem;
   color: white;
+}
+.navbar{
+  background-color:#884dff;
+  color: #fff;
+  margin: 2px,10px;
+  height: 60px;
+}
+.container{
+  /* max-width: 1100px; */
+  margin: 0 auto;
+  padding: 0 30px;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+}
+.nav li{
+  list-style: none;
+
+}
+a, .nav li a{
+  text-decoration: none;
+  color: #fff;
+}
+.navbar .logo{
+  font-size: 50px;
+  font-weight: bold;
+}
+.navbar .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.navbar ul li{
+  margin-left: 20px;
+}
+.navbar a:hover{
+  color: #3b00b3;
+  text-decoration: underline;
 }
