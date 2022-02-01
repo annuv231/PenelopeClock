@@ -19,8 +19,6 @@ body {
   height: 100%;
   margin-top: 6rem;
   font-family: 'Courier New', Courier, monospace;
-  /* padding: 30px; */
-  /* max-width: 100%; */
 }
 #main .clock .timetext {
   display: none;
