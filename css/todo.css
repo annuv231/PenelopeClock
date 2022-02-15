@@ -92,3 +92,46 @@ form button:hover {
   flex: 1;
   padding-left: 10px;
 }
+.fa-check .fa-trash {
+  pointer-events: none;
+}
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.falls {
+  transform: translateY(10rem) rotateZ(20deg);
+  transition: ease-in 0.5s;
+  opacity: 0;
+}
+
+/* styling Select  */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+  color: green;
+  background-color: wheat;
+  width: 10rem;
+  /* cursor: pointer; */
+  padding: 1rem;
+}
+.select {
+  margin: 1rem;
+  background-color: wheat;
+  /* padding: 1rem; */
+  border-radius: 10px 10px;
+  position: relative;
+  overflow: hidden;
+}
+.select::after {
+  content: '\25BC';
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: green;
+  padding: 1rem;
+}
