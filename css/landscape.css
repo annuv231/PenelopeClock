@@ -67,6 +67,7 @@ a,
 .navbar ul li {
   margin-left: 20px;
 }
+<<<<<<< HEAD:landscape.css
 .navbar a:hover {
   color: #3b00b3;
   text-decoration: underline;
@@ -78,3 +79,9 @@ h1.gettime:hover {
 h1.gettime {
   transition: all 0.5s ease-in-out;
 }
+=======
+.navbar a:hover{
+  coltext-decoration: underline;or: #3b00b3;
+  
+}
+>>>>>>> todo:css/landscape.css
