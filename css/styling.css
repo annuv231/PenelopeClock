@@ -1,63 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400&display=swap');
+
+:root {
+  --primary-color: #c3073f;
+  --secondary-color: #1f2833;
+}
 * {
+  box-sizing: border-box;
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
 }
-/* body {
-  background-image: linear-gradient(
-    to right top,
-    #f2048b,
-    #db0c9c,
-    #bf20aa,
-    #9d2fb5,
-    #733abd,
-    #5b38b8,
-    #3e36b3,
-    #0934ad,
-    #0c289f,
-    #0d1c90,
-    #0c0f82,
-    #0a0074
-  );
-  background-attachment: fixed;
-}
-.clock {
-  color: #0c010e;
-  margin: 100px;
-  text-align: center;
-  font-family: cursive;
-  font-size: 70px;
-}
-.header {
-  font-family: monospace;
-  margin: 10px;
-  font-size: 20px;
-}
-.header {
-  display: inline-block;
-  margin: 0px;
-}
-#bton {
-  font-family: monospace;
-  font-size: 3px;
-} */
+
 body {
-  background-image: linear-gradient(
-    to right top,
-    #f2048b,
-    #db0c9c,
-    #bf20aa,
-    #9d2fb5,
-    #733abd,
-    #5b38b8,
-    #3e36b3,
-    #0934ad,
-    #0c289f,
-    #0d1c90,
-    #0c0f82,
-    #0a0074
-  );
-  background-attachment: fixed;
+  font-family: 'Dongle', sans-serif;
+  font-size: 40px;
+  background-color: var(--primary-color);
 }
 #main .clock {
   display: flex;
@@ -65,22 +22,61 @@ body {
   align-items: center;
   justify-content: center;
   height: 100%;
-  margin-top: 10rem;
+  margin-top: 6rem;
   font-family: 'Courier New', Courier, monospace;
-  /* padding: 30px; */
-  /* max-width: 100%; */
 }
 #main .clock .timetext {
-  font-size: 5rem;
+  display: none;
 }
 #main .clock .gettime {
-  font-size: 9rem;
+  font-size: 6rem;
 }
 #main .clock .date {
-  font-size: 3rem;
-  margin-left: 30rem;
+  font-size: 2rem;
+  margin-left: 2rem;
   color: white;
 }
-#main .clock .day {
-  font-size: 2rem;
+.navbar {
+  background-color: var(--primary-color);
+  color: #fff;
+  margin: 2px, 10px;
+  height: 60px;
+}
+.container {
+  /* max-width: 1100px; */
+  margin: 0 auto;
+  padding: 0 30px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav li {
+  list-style: none;
+}
+a,
+.nav li a {
+  text-decoration: none;
+  color: #fff;
+}
+.navbar .logo {
+  font-size: 50px;
+  font-weight: bold;
+}
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.navbar ul li {
+  margin-left: 20px;
+}
+.navbar a:hover {
+  color: #3b00b3;
+  text-decoration: underline;
+}
+
+h1.gettime {
+  transition: all 0.5s ease-in-out;
 }
