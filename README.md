@@ -1,5 +1,5 @@
 # PenelopeClock
 A productive Clock/pomodoro/todo/reminder web app
 [Penelope App](https://penelope-clock.herokuapp.com/)
-![image](https://user-images.githubusercontent.com/33187053/194773027-a4d7597e-1c06-4e19-8c62-4d5a69eba0cf.png)
+![image](https://user-images.githubusercontent.com/33187053/194904860-17910f76-b505-440f-b81e-6b58aa0094de.png)
 
