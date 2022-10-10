@@ -61,3 +61,18 @@ setInterval(() => {
   }
   document.querySelector('.date').textContent = date;
 }, 1000);
+
+const setBg = () => {
+  const randomColor1 = '#' + Math.floor(Math.random() * 16777215).toString(16);
+  const randomColor2 = '#' + Math.floor(Math.random() * 16777215).toString(16);
+  var r = document.querySelector(':root');
+  // document.body.style.backgroundColor = '#' + randomColor1;
+  console.log('clicked', randomColor1, randomColor2);
+  r.style.setProperty('--primary-color', randomColor1);
+  r.style.setProperty('--secondary-color', randomColor2);
+};
+const genNew = document.querySelector('.btn');
+genNew.addEventListener('click', e => {
+  console.log('u clicked me');
+});
+genNew.addEventListener('click', setBg);
